@@ -1,0 +1,18 @@
+
+
+
+.product-carousel{
+    max-width: 500px;
+}
+
+.product-heading{
+    margin: 48px 0px;
+}
+.product-heading a{
+    text-decoration: none;
+    color: black;
+}
+
+.product-discription {
+    line-height: 25px;
+}

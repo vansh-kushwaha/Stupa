@@ -1,0 +1,89 @@
+@import url(global.css);
+/* Start Card Section  */
+
+.single-card {
+    width: 30rem !important;
+}
+
+.card-product-heading a{
+    text-transform: capitalize;
+    color: black;
+    text-decoration: none;
+}
+
+.product-list ol{
+    width: 90%;
+    color: gray;
+    margin-left: 2rem;
+}
+.product-list ol li{
+    width: 90%;
+    padding: 0.125rem 0.3125rem;
+    
+}
+
+.product-list ol li a{
+    text-transform: capitalize;
+    color: gray;
+    text-decoration: none;
+}
+/*  MEDIA QUERIES */
+
+@media only screen and (max-width: 271px) {
+    body{
+        /* width: max-content; */
+        font-size: 14px;
+    }
+    .single-card {
+        width: 10rem !important;
+    }
+
+    .product-list ol{
+        width: 80%;
+        padding-left: 2px;
+    }
+   
+}
+@media only screen and (min-width: 272px)and (max-width: 479px) {
+    body{
+        /* width: -webkit-fill-available; */
+        overflow-x: hidden;
+    }
+    .single-card {
+        width: 15rem !important;
+    }
+    .product-list ol{
+        width: 85%;
+        padding-left: 6px;
+    }
+}
+
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+    body{
+        /* width:; */
+        overflow-x: hidden;
+    }
+    .single-card {
+        width: 25rem !important;
+    }
+    .product-list ol{
+        padding-left: 12px;
+    }
+}
+
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .single-card {
+        width: 20rem !important;
+    }
+    
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+    .single-card {
+        width: 25rem !important;
+    }
+   
+} 
+
+/* End Card Section  */

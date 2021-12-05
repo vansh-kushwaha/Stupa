@@ -1,0 +1,101 @@
+<!-- START CALL BUTTON -->
+
+<div id="call_widget">
+  <div id="call-send-btn" class="call-widget-icon" onclick="callBtn()">
+    <i class="fas fa-phone-alt"></i>
+    <div style="color: white; font-size: 18px"></div>
+  </div>
+
+  <div class="call-btn call-box" style="display: none">
+    <div class="call-box-header">
+      <img class="call-box-brand" src="/images/Logo.jpeg" />
+      <div class="wa-chat-box-brand-text">
+        <div class="wa-chat-box-brand-name">JP ENTERPRISES</div>
+        <div class="wa-chat-box-brand-subtitle"></div>
+      </div>
+      <div class="wa-chat-bubble-close-btn" onclick="callBtn()">
+        <span style="font-size: 15px; display: table-row">&#10005;</span>
+        <!-- <img style="display: table-row"
+                        src="https://cdn.shopify.com/s/files/1/0070/3666/5911/files/Vector.png?574"> -->
+      </div>
+    </div>
+    <div class="call-box-content">
+      <p>
+        Looking for the best offer? Call me I'll be happy to find your perfect
+        option.
+      </p>
+      <div class="call-box-btn">
+        <a class="nav-link px-5 call-box-btn-call" href="tel:+91-8319564599">
+          <i class="fas fa-phone-alt"></i>Call Now</a>
+      </div>
+    </div>
+  </div>
+</div>
+<script>
+  function callBtn() {
+    let icon = $("#call_widget");
+    let iconDiv = document.querySelector("#call_widget .call-btn").style;
+
+    if (iconDiv.display == "none") {
+      iconDiv.display = "block";
+    } else {
+      iconDiv.display = "none";
+    }
+    return iconDiv;
+  }
+</script>
+
+<!-- END CALL BUTTON -->
+<!-- Start Whatsapp Widget -->
+<div id="whatsapp-widget">
+  <div id="wa-widget-send-button" onclick="whatsappWidget();">
+    <i class="fab fa-whatsapp" style="font-size: 28px; color: whitesmoke"></i>
+    <div style="color: white; font-size: 18px"></div>
+  </div>
+
+  <div class="wa-chat-box" style="display: none">
+    <div class="wa-chat-box-header">
+      <img class="wa-chat-box-brand" src="/images/Logo.jpeg" />
+      <div class="wa-chat-box-brand-text">
+        <div class="wa-chat-box-brand-name">JP ENTERPRISES</div>
+        <div class="wa-chat-box-brand-subtitle"></div>
+      </div>
+      <div class="wa-chat-bubble-close-btn" onclick="whatsappWidget()">
+        <span style="font-size: 15px; display: table-row">&#10005;</span>
+      </div>
+    </div>
+
+    <div class="wa-chat-box-content">
+      <div class="wa-chat-box-content-chat">
+        <div class="wa-chat-box-content-chat-brand">JP ENTERPRISES</div>
+        <div class="wa-chat-box-content-chat-welcome">
+          Hi, there!<br />How can I help you?
+        </div>
+      </div>
+    </div>
+
+    <div class="wa-chat-box-send">
+      <a role="button" target="_blank"
+        href="https://api.whatsapp.com/send?phone=919098134438&amp;text=Hello, I have a question about your product"
+        title="WhatsApp" class="wa-chat-box-content-send-btn">
+        <span class="wa-chat-box-content-send-btn-text"><i class="fab fa-whatsapp" style="margin-right: 5px"></i>Send
+          Message</span>
+      </a>
+    </div>
+  </div>
+</div>
+
+<script>
+  function whatsappWidget() {
+    let icon = $("#whatsapp-widget");
+    let iconDiv = document.querySelector("#whatsapp-widget .wa-chat-box").style;
+
+    if (iconDiv.display == "none") {
+      iconDiv.display = "block";
+    } else {
+      iconDiv.display = "none";
+    }
+    return iconDiv;
+  }
+</script>
+<!-- End Whatsapp Widget -->
